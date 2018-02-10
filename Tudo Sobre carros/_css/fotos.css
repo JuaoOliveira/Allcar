@@ -1,0 +1,58 @@
+#album-fotos {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: hidden;
+	list-style: none;
+}
+
+#album-fotos li{
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border: 5px solid white;
+	background-color: white;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	background-position: 50% 50%;
+	background-size: 500px 500px;
+	transition: all .4s ease-in;
+}
+
+#album-fotos li:hover{
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+#album-fotos li:hover{
+	transform: scale(1.5);
+}
+
+#album-fotos li span{
+	font-family: Open Sans;
+	opacity: 0; 
+	color: #FFFFFF; 
+	text-shadow: 1px 1px 1px black;
+	background-color: rgba(0,0,0,.3);
+	font-size: 9pt;
+	line-height: 370px;
+	padding: 5px;
+}
+
+#album-fotos li:hover span{
+	opacity: 1;
+}
+
+#foto01{background: url(../_fotos/911-carrera.jpg) no-repeat}
+#foto02{background: url(../_fotos/audi-r8.jpg) no-repeat}
+#foto03{background: url(../_fotos/aventador.jpg) no-repeat}
+#foto04{background: url(../_fotos/bmw-i8.jpg) no-repeat}
+#foto05{background: url(../_fotos/bmw-i9.jpg) no-repeat}
+#foto06{background: url(../_fotos/camaro.jpg) no-repeat}
+#foto07{background: url(../_fotos/corvette.jpg) no-repeat}
+#foto08{background: url(../_fotos/laferrari.jpg) no-repeat}
+#foto09{background: url(../_fotos/mclaren.jpg) no-repeat}
+#foto10{background: url(../_fotos/mustang.jpg) no-repeat}
+#foto11{background: url(../_fotos/tesla.jpg) no-repeat}
+#foto12{background: url(../_fotos/vision-gt.jpg) no-repeat}
+

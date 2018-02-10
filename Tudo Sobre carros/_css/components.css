@@ -1,0 +1,14 @@
+#conteudo{
+    width: 1000px;
+    margin: auto;
+}
+
+#frame-spec{
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    top: 50px;
+    border: none;
+    overflow: hidden;
+}
+

@@ -11,12 +11,15 @@ function mudaFoto(foto) {
 var interval = setInterval(showAdd, 5000);
 
 function showAdd() {
-    document.querySelector(".ad").style.display = "block";
+    var ad = document.querySelector(".ad");
 
-    document.querySelector(".ad #btn-close").addEventListener("click", function() {
-        document.querySelector(".ad").style.display = "none";
-        clearInterval(interval);
-    })
+    if (ad !== null) {
+        document.querySelector(".ad").style.display = "block";
+        document.querySelector(".ad #btn-close").addEventListener("click", function() {
+            document.querySelector(".ad").style.display = "none";
+            clearInterval(interval);
+        })
+    }
 }
 
 //Validar formulário do anuncio
@@ -30,24 +33,29 @@ $("#input_name").keyup(function() {
 })
 
 //Validar anuncio
-document.querySelector(".input_btn").addEventListener("click", function(evt) {
-    var emailAd = form_ad.email_ad.value.trim();
-    if (emailAd.length == 0 || emailAd.indexOf('@') == -1 || 
-    emailAd.substr(emailAd.length - 4) !== ".com") {
-        alert("Digite o e-mail corretamente!");
-        evt.preventDefault();
-    } 
-})
+var btnInput = document.querySelector(".ad");
+if (btnInput != null) {
+    document.querySelector(".input_btn").addEventListener("click", function(evt) {
+        var emailAd = form_ad.email_ad.value.trim();
+        if (emailAd.length == 0 || emailAd.indexOf('@') == -1 || 
+        emailAd.substr(emailAd.length - 4) !== ".com") {
+            alert("Digite o e-mail corretamente!");
+            evt.preventDefault();
+        } 
+    })
+}
 
 //Colocar data atual no campo de data
 $(document).ready(function() {
+    var form = document.querySelector("#fContato");
     var nascMask = $("#nasc");
     nascMask.mask('00/00/0000', {
         placeholder: 'DD/MM/AAAA'
     });
-})
+
 
 //Validando o formulário do fale conosco
+if(form != null){
 document.querySelector("#btn_enviar").addEventListener("click", function (e) {
     var name = form1.tNome.value.trim();
     var email = form1.tEmail.value.trim();
@@ -80,7 +88,8 @@ document.querySelector("#btn_enviar").addEventListener("click", function (e) {
         e.preventDefault();
     }
 })
-
+}
+})
 //Validando o nome antes de apertar o botão
 $("#nome").keyup(function (e) {
     var name = form1.tNome.value.trim();

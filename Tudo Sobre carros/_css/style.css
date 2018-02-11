@@ -326,7 +326,7 @@ p {
 	margin-top: 200px;
 	z-index: 99999;
 	padding: 20px;
-	height: 200px;
+	height: 220px;
 	border-radius: 5px;
 	margin-left: 450px;
 }
@@ -366,11 +366,21 @@ Editando o estilo das spans (contatos)
 	margin: 0 350px 0 280px;
 }
 #btn_enviar {
-	margin-bottom: 20px;
-	margin-left: 40px;
+	margin-bottom: 25px;
+	margin-left: 30px;
 }
 
 .word-counter{
 	margin-left: 250px;
 	font-size: 10px;
+}
+
+.invalidData {
+	color: red;
+	font-size: 10px;
+	margin: 0;
+}
+
+.input_btn {
+	margin-left: 330px;
 }

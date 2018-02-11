@@ -2,7 +2,7 @@
 
 
 body {
-	font-family: Open Sans, san-serif;
+	font-family: 'Open Sans', san-serif;
 	color: rgba(0,0,0,1);
 	margin: 0;
 	background-color: #fff;
@@ -353,4 +353,23 @@ p {
 input {
     padding: 5px;
     font-family: 'Open Sans'
+}
+
+/*
+Editando o estilo das spans (contatos)
+*/
+
+.invalidName, .invalidEmail, .invalidNasc {
+	color: red;
+	font-size: 9px;
+	margin: 0 350px 0 280px;
+}
+#btn_enviar {
+	margin-bottom: 20px;
+	margin-left: 40px;
+}
+
+.word-counter{
+	margin-left: 250px;
+	font-size: 10px;
 }

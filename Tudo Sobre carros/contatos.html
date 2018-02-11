@@ -60,25 +60,27 @@
         <form name="form1" style="line-height:2" method="post" id="fContato">
         <fieldset id="usuario"><legend>Identificação do Usuário</legend>
 
-        <label for="nome"><p>Nome:<input name="tNome" type="text" id="nome" placeholder="Nome Completo" size="40"><br></p></label>
-        <span class="invalidMsg"></span>
+        <label for="nome"><p>Nome:<input name="tNome" type="text" id="nome" placeholder="Nome Completo" size="40"></p></label><span class="invalidName"></span>
 
         <label for="email"><p>E-mail:<input name="tEmail" type="email" id="email" placeholder="exemplo@exemplo.com" size="40"><br></p></label>
+        <span class="invalidEmail"></span>
 
         <fieldset style="width:700px; margin: 0 auto;" id="sexo"><legend>Sexo</legend>
             <p><input type="radio" name="tSexo" id="cMasc" checked> <label for="cMasc">Masculino</label></p>
             <p><input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label></p>
-        </fieldset>
+        </fieldset><br>
 
-        <label for="nasc"><p>Data de Nascimento:<input id="nasc" name="tNasc" type="date" placeholder="dd/mm/aaaa"></p></label>
+        <label for="nasc"><p>Data de Nascimento:<input id="nasc" name="tNasc" type="text"></p></label><br>
 
     </fieldset>
 
     <fieldset id="mensagem"><legend>Mensagem</legend>
         <label for="msg"><p>Mensagem</p></label>
         <textarea style="margin-left:40px" name="cMsg" id="msg" cols="50" rows="10" placeholder="Digite seu texto"></textarea>
+        <span class="invalidMsg"></span><br>
 
         <input type="submit" name="submit" value="Enviar" id="btn_enviar">
+        <span class="word-counter"></span>
     </fieldset>
 
     </form>
@@ -134,6 +136,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="javascript/functions.js" language="javascript"></script>
+<script type="text/javascript" src="javascript/jquery.mask.min.js">
 
+</script>
 </body>
 </html>

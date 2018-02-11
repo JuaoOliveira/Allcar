@@ -315,6 +315,7 @@ p {
 	background-color: #29303b;
 	border: 1px solid #29303b;
 	border-radius: 5px;
+	cursor: pointer;
 }
 
 .ad{

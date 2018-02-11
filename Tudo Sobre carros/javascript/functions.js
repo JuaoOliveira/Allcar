@@ -1,4 +1,4 @@
-/* ESTE SCRIPT ESTÁ FUNCIONAL ATÉ O MOMENTO! 10/02/18 - 23:19 */
+/* ESTE SCRIPT ESTÁ FUNCIONAL ATÉ O MOMENTO! 11/02/18 - 13:30 */
 
 var regex = new RegExp("^[ a-z\-A-Zàèìòùáéíóúâêîôûãõ\b]+$");
 var regEmail = new RegExp("^[ a-z0-9\-A-Zàèìòùáéíóúâêîôûãõ\b]+$");
@@ -8,19 +8,22 @@ function mudaFoto(foto) {
 }
 
 //Habilitar e desabilitar o anuncio
-setTimeout(showAdd, 5000);
+var interval = setInterval(showAdd, 5000);
 
 function showAdd() {
     document.querySelector(".ad").style.display = "block";
 
     document.querySelector(".ad #btn-close").addEventListener("click", function() {
         document.querySelector(".ad").style.display = "none";
+        clearInterval(interval);
     })
-}
+}   
+
+//Validar formulário do anuncio
+//document.querySelector("#input_name")
 
 //Colocar data atual no campo de data
 $(document).ready(function() {
-    var data = new Date();
     var nascMask = $("#nasc");
     nascMask.mask('00/00/0000', {placeholder: 'DD/MM/AAAA'});
 })

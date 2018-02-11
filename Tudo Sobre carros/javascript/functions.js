@@ -1,4 +1,4 @@
-/* ESTE SCRIPT ESTÁ FUNCIONAL ATÉ O MOMENTO! 10/02/18 - 23:19 */
+/* ESTE SCRIPT ESTÁ FUNCIONAL ATÉ O MOMENTO! 11/02/18 - 13:40 */
 
 var regex = new RegExp("^[ a-z\-A-Zàèìòùáéíóúâêîôûãõ\b]+$");
 var regEmail = new RegExp("^[ a-z0-9\-A-Zàèìòùáéíóúâêîôûãõ\b]+$");
@@ -20,7 +20,6 @@ function showAdd() {
 
 //Colocar data atual no campo de data
 $(document).ready(function() {
-    var data = new Date();
     var nascMask = $("#nasc");
     nascMask.mask('00/00/0000', {placeholder: 'DD/MM/AAAA'});
 })

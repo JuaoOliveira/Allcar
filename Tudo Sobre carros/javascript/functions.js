@@ -1,4 +1,4 @@
-/* ESTE SCRIPT ESTÁ FUNCIONAL ATÉ O MOMENTO! 11/02/18 - 13:30 */
+/* ESTE SCRIPT ESTÁ FUNCIONAL ATÉ O MOMENTO! 11/02/18 - 14:12 */
 
 var regex = new RegExp("^[ a-z\-A-Zàèìòùáéíóúâêîôûãõ\b]+$");
 var regEmail = new RegExp("^[ a-z0-9\-A-Zàèìòùáéíóúâêîôûãõ\b]+$");

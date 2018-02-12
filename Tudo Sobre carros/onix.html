@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <title>Allcar</title>
     <link rel="stylesheet" type="text/css" href="_css/style.css">
@@ -15,190 +16,172 @@
 
 <body>
 
-<header id="cabecalho">
-    <nav class="menu">
-        <ul>
-            <li onmouseover="mudaFoto('_multimidia/home.png')" onmouseout="mudaFoto('_multimidia/carro.png')"
-                class="logo"><a href="index.html"><img src="_multimidia/logo.png" alt=""></a></li>
-            <li onmouseover="mudaFoto('_multimidia/especificacoes-02.png')"
-                onmouseout="mudaFoto('_multimidia/carro.png')"><a href="partes-do-carro.html">Componentes</a>
-            </li>
-            <li onmouseover="mudaFoto('_multimidia/fotos.png')" onmouseout="mudaFoto('_multimidia/carro.png')"><a
-                    href="fotos.html">Fotos</a></li>
-            <li onmouseover="mudaFoto('_multimidia/contato.png')" onmouseout="mudaFoto('_multimidia/carro.png')"><a
-                    href="contatos.html">Fale conosco</a></li>
-        </ul>
-    </nav>
-</header>
+    <header id="cabecalho">
+        <nav class="menu">
+            <ul>
+                <li onmouseover="mudaFoto('_multimidia/home.png')" onmouseout="mudaFoto('_multimidia/carro.png')" class="logo"><a href="index.html"><img src="_multimidia/logo.png" alt=""></a></li>
+                <li onmouseover="mudaFoto('_multimidia/especificacoes-02.png')" onmouseout="mudaFoto('_multimidia/carro.png')"><a href="partes-do-carro.html">Componentes</a>
+                </li>
+                <li onmouseover="mudaFoto('_multimidia/fotos.png')" onmouseout="mudaFoto('_multimidia/carro.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('_multimidia/contato.png')" onmouseout="mudaFoto('_multimidia/carro.png')"><a href="contatos.html">Fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<img id="img-carro" src="_multimidia/carro.png">
+    <img id="img-carro" src="_multimidia/carro.png">
 
-<div class="barra-lateral">
+    <div class="barra-lateral">
         <ul>
-            <li><h3>Lista de Marcas</h3></li>
+            <li>
+                <h3>Lista de Marcas</h3></li>
             <li id="chev"><a href="#">Chevrolet &nbsp;&nbsp; &gt;</a>
                 <ul>
                     <li>
                         <a href="onix.html">Onix</a>
                 </ul>
-            </li>
-            <li><a href="#">Volkswagen</a></li>
-            <li><a href="#">Ford</a></li>
-            <li><a href="#">Toyota</a></li>
-            <li><a href="#">Honda</a></li>
-            <li><a href="#">Hyundai</a></li>
-            <li><a href="#">Ferrari</a></li>
-            <li><a href="#">Jeep</a></li>
-            <li><a href="#">Fiat</a></li>
+                </li>
+                <li><a href="#">Volkswagen</a></li>
+                <li id="ford"><a href="#">Ford &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;</a>
+                    <ul>
+                        <li class="submenuLateral">
+                            <a href="ka.html">Ka</a>
+                    </ul>
+                    </li>
+                    <li><a href="#">Toyota</a></li>
+                    <li><a href="#">Honda</a></li>
+                    <li><a href="#">Hyundai</a></li>
+                    <li><a href="#">Ferrari</a></li>
+                    <li><a href="#">Jeep</a></li>
+                    <li><a href="#">Fiat</a></li>
         </ul>
     </div>
 
-<div id="subtitulo">
-    Saiba tudo sobre Carros
-    <br> Atualizado em 07/01/2018
-</div>
-
-<div class="espaco"></div>
-
-<div class="interface">
-    <div class="content">
-        <h1>Chevrolet Onix</h1><br><br>
-
-        <figure class="carro">
-            <img src="_multimidia/onix02-peq.jpg">
-            <figcaption>
-                O Chevrolet Onix é o carro mais vendido no Brasil atualmente, com cerca de 188 mil vendas em 2017.
-            </figcaption>
-        </figure>
-        <br>
-        <br>
-        <section>
-            <h2>Data de lançamento</h2>
-            <p>O lançamento da primeira versão do Onix foi em 2012, em São Paulo, porém, aqui será usada como modelo a
-                versão de 2016.</p><br><br>
-
-            <h2>Sobre o Onix</h2>
-            <p>O novo Chevrolet Onix foi feito para os dias de hoje. Além do motor 1.4L de 106 cv, esse veículo também
-                conta com toda
-                a tecnologia do OnStar e do Chevrolet MyLink Nova Geração.</p><br><br>
-
-            <h2>Especificações Técnicas</h2><br>
-            <table id="tab-onix">
-                <caption>Tabela Técnica do Chevrolet Onix 2016</caption>
-                <tr>
-                    <td class="ce" rowspan="3">Motor</td>
-                    <td class="cd">1.0 ou 1.4</td>
-                </tr>
-                <tr>
-                    <td class="cd">4 cilindros</td>
-                </tr>
-                <tr>
-                    <td class="cd">80/106 cv de potência</td>
-                </tr>
-                <tr>
-                    <td class="ce" rowspan="2">Combustível</td>
-                    <td class="cd">Gasolina</td>
-                </tr>
-                <tr>
-                    <td class="cd">Etanol</td>
-                </tr>
-                <tr>
-                    <td class="ce" rowspan="2">Consumo</td>
-                    <td class="cd">Gasolina: 9,1 - 14,3 km/l (em média)</td>
-                </tr>
-                <tr>
-                    <td class="cd">Etanol: 8 - 11 km/l (em média)</td>
-                </tr>
-                <tr>
-                    <td class="ce">Transmissão</td>
-                    <td class="cd">5 marchas</td>
-                </tr>
-                <tr>
-                    <td class="ce">ABS</td>
-                    <td class="cd">Possui</td>
-                </tr>
-            </table>
-            <br><br>
-
-            <h2>Itens adicionais</h2>
-            <p>O carro vem equipado com Airbag duplo, alarme Anti-furto, aviso sonoro para cinto de segurança, Brake
-                Light, Painel eletrônico
-                entre outros itens.</p><br><br>
-
-            <h2>O que o carro oferece</h2>
-            <p>O Onix coloca o seu smartphone na tela do carro através do Chevrolet MyLink e oferece toda a comodidade
-                com os serviços
-                da exclusiva tecnologia OnStar.</p>
-            <p>Com a atualização no Sistema Android Auto, você poderá visualizar mapas e rotas do aplicativo diretamente
-                na tela do seu
-                Chevrolet MyLink. É mais conectividade para você não perder tempo no trânsito e chegar mais rápido ao
-                seu destino com
-                todo conforto.</p><br><br>
-
-            <h2>O que o Chevrolet Link oferece</h2>
-            TELA LCD SENSÍVEL AO TOQUE 7”; BOTÕES DE ACESSO RÁPIDO; INTEGRAÇÃO COM SMARTPHONES ATRAVÉS DO ANDROID AUTO E
-            APPLE CARPLAY;
-            CONEXÃO BLUETOOH PARA CELULAR; RÁDIO AM/FM, ENTRADA USB E AUX-IN; WAZE INTEGRADO, COM MAPAS E ROTAS
-            DIRETAMENTE NA TELA<br><br><br><br><br>
-
-            <h2>Novidades no Onix</h2>
-            <p>Agora, no computador de bordo do Onix, serão mostradas informações como consumo médio, velocidade média,
-                autonomia, temperatura
-                externa, tempo de viagem, entre outras informações.</p><br>
-        </section>
-        <figure class="carro">
-            <img src="_multimidia/onix-dentro.jpg" alt="">
-            <figcaption>Onix visto de dentro</figcaption>
-        </figure>
-        <br>
-
-
-        <h2>A parte mais triste para nós: o preço</h2>
-        <p>Se você quiser ter uma belezinha dessas na sua garagem, você terá que desembolsar R$37.790,00 na versão mais
-            simples, e R$41.550,00 na versão top de linha. Porém se você quiser o MyLink, terá que pagar mais
-            R$1.640,00.</p><br>
-
-        </section>
-        <figure class="carro" id="myLink" style="margin-bottom:50px">
-            <img src="_multimidia/onix-mylink.jpg">
-            <figcaption>Onix visto de dentro</figcaption>
-        </figure>
+    <div id="subtitulo">
+        Saiba tudo sobre Carros
+        <br> Atualizado em 07/01/2018
     </div>
 
-</div>
+    <div class="espaco"></div>
 
-<footer class="rodape">
-	
+    <div class="interface">
+        <div class="content">
+            <h1>Chevrolet Onix</h1><br><br>
+
+            <figure class="carro">
+                <img src="_multimidia/onix02-peq.jpg">
+                <figcaption>
+                    O Chevrolet Onix é o carro mais vendido no Brasil atualmente, com cerca de 188 mil vendas em 2017.
+                </figcaption>
+            </figure>
+            <br>
+            <br>
+            <section>
+                <h2>Data de lançamento</h2>
+                <p>O lançamento da primeira versão do Onix foi em 2012, em São Paulo, porém, aqui será usada como modelo a versão de 2016.</p><br><br>
+
+                <h2>Sobre o Onix</h2>
+                <p>O novo Chevrolet Onix foi feito para os dias de hoje. Além do motor 1.4L de 106 cv, esse veículo também conta com toda a tecnologia do OnStar e do Chevrolet MyLink Nova Geração.</p><br><br>
+
+                <h2>Especificações Técnicas</h2><br>
+                <table id="tab-onix">
+                    <caption>Tabela Técnica do Chevrolet Onix 2016</caption>
+                    <tr>
+                        <td class="ce" rowspan="3">Motor</td>
+                        <td class="cd">1.0 ou 1.4</td>
+                    </tr>
+                    <tr>
+                        <td class="cd">4 cilindros</td>
+                    </tr>
+                    <tr>
+                        <td class="cd">80/106 cv de potência</td>
+                    </tr>
+                    <tr>
+                        <td class="ce" rowspan="2">Combustível</td>
+                        <td class="cd">Gasolina</td>
+                    </tr>
+                    <tr>
+                        <td class="cd">Etanol</td>
+                    </tr>
+                    <tr>
+                        <td class="ce" rowspan="2">Consumo</td>
+                        <td class="cd">Gasolina: 9,1 - 14,3 km/l (em média)</td>
+                    </tr>
+                    <tr>
+                        <td class="cd">Etanol: 8 - 11 km/l (em média)</td>
+                    </tr>
+                    <tr>
+                        <td class="ce">Transmissão</td>
+                        <td class="cd">5 marchas</td>
+                    </tr>
+                    <tr>
+                        <td class="ce">ABS</td>
+                        <td class="cd">Possui</td>
+                    </tr>
+                </table>
+                <br><br>
+
+                <h2>Itens adicionais</h2>
+                <p>O carro vem equipado com Airbag duplo, alarme Anti-furto, aviso sonoro para cinto de segurança, Brake Light, Painel eletrônico entre outros itens.</p><br><br>
+
+                <h2>O que o carro oferece</h2>
+                <p>O Onix coloca o seu smartphone na tela do carro através do Chevrolet MyLink e oferece toda a comodidade com os serviços da exclusiva tecnologia OnStar.</p>
+                <p>Com a atualização no Sistema Android Auto, você poderá visualizar mapas e rotas do aplicativo diretamente na tela do seu Chevrolet MyLink. É mais conectividade para você não perder tempo no trânsito e chegar mais rápido ao seu destino
+                    com todo conforto.</p><br><br>
+
+                <h2>O que o Chevrolet Link oferece</h2> TELA LCD SENSÍVEL AO TOQUE 7”; BOTÕES DE ACESSO RÁPIDO; INTEGRAÇÃO COM SMARTPHONES ATRAVÉS DO ANDROID AUTO E APPLE CARPLAY; CONEXÃO BLUETOOH PARA CELULAR; RÁDIO AM/FM, ENTRADA USB E AUX-IN; WAZE INTEGRADO, COM MAPAS E ROTAS DIRETAMENTE
+                NA TELA<br><br><br><br><br>
+
+                <h2>Novidades no Onix</h2>
+                <p>Agora, no computador de bordo do Onix, serão mostradas informações como consumo médio, velocidade média, autonomia, temperatura externa, tempo de viagem, entre outras informações.</p><br>
+            </section>
+            <figure class="carro">
+                <img src="_multimidia/onix-dentro.jpg" alt="">
+                <figcaption>Onix visto de dentro</figcaption>
+            </figure>
+            <br>
+
+
+            <h2>A parte mais triste para nós: o preço</h2>
+            <p>Se você quiser ter uma belezinha dessas na sua garagem, você terá que desembolsar R$37.790,00 na versão mais simples, e R$41.550,00 na versão top de linha. Porém se você quiser o MyLink, terá que pagar mais R$1.640,00.
+            </p><br>
+
+            </section>
+            <figure class="carro" id="myLink" style="margin-bottom:50px">
+                <img src="_multimidia/onix-mylink.jpg">
+                <figcaption>Onix visto de dentro</figcaption>
+            </figure>
+        </div>
+
+    </div>
+
+    <footer class="rodape">
+
         <div class="container">
             <div class="div-rodape">
-                    <h3>Contato</h3>        
-                    Endereço: Av. Alguma Coisa, 666, Fortaleza-Ce <br>CEP: 72000-000 <br>
-                    Telefone: <a href="tel:6133333333">(61) 3333-3333</a><br>
-                    Email: <a href="mailto:allcar@site.com.br">allcar@site.com.br</a>
+                <h3>Contato</h3> Endereço: Av. Alguma Coisa, 666, Fortaleza-Ce <br>CEP: 72000-000 <br> Telefone: <a href="tel:6133333333">(61) 3333-3333</a><br> Email: <a href="mailto:allcar@site.com.br">allcar@site.com.br</a>
             </div>
-        
+
             <div class="div-rodape">
                 <h3>Redes Sociais</h3>
                 <a href="#">Facebook</a><br>
                 <a href="#">Twitter</a><br>
                 <a href="#">Instagram</a>
             </div>
-        
+
             <div class="div-rodape">
                 <h3>Sobre o site</h3>
                 <a href="contatos.html">Fale conosco</a><br>
                 <a href="fotos.html">Álbum de fotos</a><br>
                 <a href="onde-estamos.html">Onde estamos</a>
             </div>
-    
-            </div>
-    
-            <div class="copy" ><br>
-                Todos os direitos reservados &copy; 2018. <a href="Termo-de-uso.html">Termos de uso</a> e <a href="politica-de-privacidade.html">Política de privacidade.</a><br>
-                <a href="#">Facebook</a> |
-                <a href="#">Twitter</a>
-            </div>
-        
+
+        </div>
+
+        <div class="copy"><br> Todos os direitos reservados &copy; 2018. <a href="Termo-de-uso.html">Termos de uso</a> e <a href="politica-de-privacidade.html">Política de privacidade.</a><br>
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a>
+        </div>
+
     </footer>
 </body>
 

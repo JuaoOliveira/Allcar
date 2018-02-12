@@ -1,354 +1,356 @@
-﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body {
-	font-family: 'Open Sans', san-serif;
-	color: rgba(0,0,0,1);
-	margin: 0;
-	background-color: #fff;
-	background-size: 100%;
+    font-family: 'Open Sans', san-serif;
+    color: rgba(0, 0, 0, 1);
+    margin: 0;
+    background-color: #fff;
+    background-size: 100%;
 }
 
-.interface{
-	max-width: 800px;
-	width: 100%;
-	margin: 10px auto;
-	margin-left: 190px;
-	background-color: #fff;
-	min-height: 466px;
-	padding: 15px;
-	top: 50px;
-	position: relative;
+.interface {
+    max-width: 800px;
+    width: 100%;
+    margin: 10px auto;
+    margin-left: 190px;
+    background-color: #fff;
+    min-height: 466px;
+    padding: 15px;
+    top: 50px;
+    position: relative;
 }
 
 p {
-	text-indent: 30px;
-	text-align: justify;
-	padding: 5px;
+    text-indent: 30px;
+    text-align: justify;
+    padding: 5px;
 }
 
 /* Formatação de fotos com legenda */
 
-#img-home{
-	position: absolute;
-	z-index: 10000;
-	height: 100px;
-	left:1200px;
-	top:60px;
+#img-home {
+    position: absolute;
+    z-index: 10000;
+    height: 100px;
+    left: 1200px;
+    top: 60px;
 }
 
-#img-carro{
-	position: absolute;
-	z-index: 10000;
-	height: 100px;
-	left:1150px;
-	top:60px;
+#img-carro {
+    position: absolute;
+    z-index: 10000;
+    height: 100px;
+    left: 1150px;
+    top: 60px;
 }
 
 .fotoLegenda {
-	border: 8px solid #ffffff;
-	box-shadow: 1px 1px 4px #000000;
-	position: relative;
+    border: 8px solid #ffffff;
+    box-shadow: 1px 1px 4px #000000;
+    position: relative;
 }
 
 .fotoLegenda img {
-	width: 800px;
-	height: 100%;
+    width: 800px;
+    height: 100%;
 }
 
 .fotoLegenda figcaption {
-	opacity: 0;
-	position: absolute;
-	top: 0px;
-	background-color: rgba(0,0,0,.4);
-	color: white;
-	width: 100%;
-	height: 100%;
-	padding: 10px;
-	box-sizing: border-box;
-	transition: opacity .6s;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity .6s;
 }
 
-.fotoLegenda:hover figcaption{
-	opacity: 1;
+.fotoLegenda:hover figcaption {
+    opacity: 1;
 }
 
-.carro{
-	border: 4px solid #ffffff;
-	box-shadow: 1px 1px 4px #000000;
-	position: relative;
+.carro {
+    border: 4px solid #ffffff;
+    box-shadow: 1px 1px 4px #000000;
+    position: relative;
 }
 
-.carro img{
-	width: 100%;
-	height: 100%;
+.carro img {
+    width: 100%;
+    height: 100%;
 }
 
-.carro figcaption{
-	opacity: 0;
-	position: absolute;
-	top: 0px;
-	background-color: rgba(0,0,0,.4);
-	color: white;
-	width: 100%;
-	height: 100%;
-	padding: 10px;
-	box-sizing: border-box;
-	transition: opacity .6s;
+.carro figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity .6s;
 }
 
-.carro:hover figcaption{
-	opacity: 1;
+.carro:hover figcaption {
+    opacity: 1;
 }
 
 /* Menu principal */
 
-*{
-	margin: 0;
-	padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
-
 
 .logo {
-	float:left;
-	position: relative;
-	list-style-type: none;
-	margin-top: 5px;
-	top: -10px;
-	margin-right: 70px;
+    float: left;
+    position: relative;
+    list-style-type: none;
+    margin-top: 5px;
+    top: -10px;
+    margin-right: 70px;
 }
 
-.menu{
-	position: fixed;
-	width: 100%;
-	height: 45px;
-	background-color: #F1F1F1;
-	list-style-type: none;
-	padding-bottom: 5px;
-	z-index: 99999;
-
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    background-color: #F1F1F1;
+    list-style-type: none;
+    padding-bottom: 5px;
+    z-index: 99999;
 }
 
-
-.menu ul{
-	list-style: none;
-	position: relative;
+.menu ul {
+    list-style: none;
+    position: relative;
 }
 
-.menu li ul{
-	width: 150px;
-	float: left;
+.menu li ul {
+    width: 150px;
+    float: left;
 }
 
-.menu ul li{
-	max-width: 200px;
-	float: left;
+.menu ul li {
+    max-width: 200px;
+    float: left;
 }
 
-.menu a{
-	text-transform: uppercase;
-	padding: 15px;
-	display: block;
-	text-decoration: none;
-	text-align: center;
-	background-color: #F1F1F1;
-	color: #000;
-	height: 20px;
+.menu a {
+    text-transform: uppercase;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #F1F1F1;
+    color: #000;
+    height: 20px;
     transition: background-color .4s;
 }
 
-
-.menu a:hover{
-	background-color: #DFDFDF;
+.menu a:hover {
+    background-color: #DFDFDF;
 }
 
-.logo a:hover{
-	background-color: #F1F1F1;
+.logo a:hover {
+    background-color: #F1F1F1;
 }
-
 
 /* Estilizando o Subtítulo */
 
-#subtitulo{
-	background-color: #29303b;
-	color: #ffffff;
-	width: 100%;
-	font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+#subtitulo {
+    background-color: #29303b;
+    color: #ffffff;
+    width: 100%;
+    font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 30px;
-	padding: 20px;
-	position: absolute;
-	top: 50px;
+    padding: 20px;
+    position: absolute;
+    top: 50px;
 }
 
 /* Configuração do rodapé */
 
 .rodape {
-	background-color: #29303b;
-	position: absolute;
-	padding: 50px;
-	padding-bottom: 160px;
-	width: 100%;
-	color: #fff;
-	min-height: 100px;
-	margin-top: 50px;
+    background-color: #29303b;
+    position: absolute;
+    padding: 50px;
+    padding-bottom: 160px;
+    width: 100%;
+    color: #fff;
+    min-height: 100px;
+    margin-top: 50px;
 }
 
-.container{
-	margin-left: 150px;
-	width: 100%;
+.container {
+    margin-left: 150px;
+    width: 100%;
 }
 
-.rodape a{
-	text-decoration: none;
-	color: rgb(153, 153, 153);
+.rodape a {
+    text-decoration: none;
+    color: rgb(153, 153, 153);
 }
 
-.rodape a:hover{
-	color: #127acf;
+.rodape a:hover {
+    color: #127acf;
 }
 
-.div-rodape{
-	line-height: 2;
-	width: 33%;
-	float: left;
+.div-rodape {
+    line-height: 2;
+    width: 33%;
+    float: left;
 }
 
-.copy{
-	width: 90%;
-	border-top: 1px solid #666;
-	position: absolute;
-	margin-left:-30px;
-	margin-top: 220px;
-	text-align: center;
+.copy {
+    width: 90%;
+    border-top: 1px solid #666;
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 220px;
+    text-align: center;
 }
 
 /* Configurando a barra lateral */
 
-.barra-lateral{
-	position: absolute;
-	display: inline-block;
-	top: 172px;
-	left: 0px;
-	background-color: #DFDFDF;
-	z-index: 9999;
+.barra-lateral {
+    position: absolute;
+    display: inline-block;
+    top: 172px;
+    left: 0px;
+    background-color: #DFDFDF;
+    z-index: 9999;
 }
 
-.barra-lateral ul{
-	list-style: none;
-	position: relative;
+.barra-lateral ul {
+    list-style: none;
+    position: relative;
 }
 
-.barra-lateral li{
-	padding: 15px;
-	transition: background-color .4s;
+.barra-lateral li {
+    padding: 15px;
+    transition: background-color .4s;
 }
 
-.barra-lateral a{
-	text-decoration: none;
-	color: #000;
-	padding: 15px;
+.barra-lateral a {
+    text-decoration: none;
+    color: #000;
+    padding: 15px;
 }
 
-.barra-lateral li:hover{
-	background-color: rgb(199, 199, 199);
+.barra-lateral li:hover {
+    background-color: rgb(199, 199, 199);
 }
 
 .barra-lateral li ul {
-	position: absolute;
-	background-color: #DFDFDF;
-	left: 165px;
-	top: 55px;
-	display: none;
-	width: 150px;
-	text-align: center;
+    position: absolute;
+    background-color: #DFDFDF;
+    left: 165px;
+    top: 55px;
+    display: none;
+    width: 150px;
+    text-align: center;
 }
 
-.barra-lateral li:hover ul{
-	display: block;
+.barra-lateral li:hover ul {
+    display: block;
+}
+
+.submenuLateral {
+    position: absolute;
+    top: 104px;
+    background-color: #DFDFDF
 }
 
 /* Estilo das tabelas */
-#tab-onix{
-	border: 1px solid #29303b;
-	border-spacing: 0;
-	margin-left: auto;
-	margin-right: auto;
+
+#tab-onix {
+    border: 1px solid #29303b;
+    border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#tab-onix td{
-	border: 1px solid #29303b;
-	padding: 10px;
-	text-align: center;
-
+#tab-onix td {
+    border: 1px solid #29303b;
+    padding: 10px;
+    text-align: center;
 }
 
-.ce{
-	color: white;
-	background-color: #29303b;
-	vertical-align: top;
-	font-weight: bold;
+.ce {
+    color: white;
+    background-color: #29303b;
+    vertical-align: top;
+    font-weight: bold;
 }
 
-.cd{
-	background-color: #DFDFDF;
+.cd {
+    background-color: #DFDFDF;
 }
 
-#tab-onix caption{
-	font-size: 13pt;
-	font-weight: bold;
-	color: #444;
+#tab-onix caption {
+    font-size: 13pt;
+    font-weight: bold;
+    color: #444;
 }
 
-.carro-spec{
-	position: relative;
-	top: 50px;
-	left: -20px;
-	margin-bottom: 40px;
+.carro-spec {
+    position: relative;
+    top: 50px;
+    left: -20px;
+    margin-bottom: 40px;
 }
 
-.espaco{
-	padding:80px;
+.espaco {
+    padding: 80px;
 }
 
-.btnDestaque{
-	padding: 10px;
-	background-color: #29303b;
-	border: 1px solid #29303b;
-	border-radius: 5px;
-	cursor: pointer;
+.btnDestaque {
+    padding: 10px;
+    background-color: #29303b;
+    border: 1px solid #29303b;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.ad{
-	display: none;
-	position: fixed;
-	width: 400px;
-	background-color: #F1F1F1;
-	margin-top: 200px;
-	z-index: 99999;
-	padding: 20px;
-	height: 220px;
-	border-radius: 5px;
-	margin-left: 450px;
+.ad {
+    display: none;
+    position: fixed;
+    width: 400px;
+    background-color: #F1F1F1;
+    margin-top: 200px;
+    z-index: 99999;
+    padding: 20px;
+    height: 220px;
+    border-radius: 5px;
+    margin-left: 450px;
 }
 
-.ad input{
-	margin-top: 15px;
+.ad input {
+    margin-top: 15px;
 }
+
 .ad .input_btn {
-	color: white;
-}
-.ad #input_name {
-	width: 100%;
-}
-.ad p {
-	margin-top: 10px;
-	text-indent: 0px;
+    color: white;
 }
 
-#btn-close{
-	float: right;
-	margin: -15px -5px;
-	cursor: pointer;
+.ad #input_name {
+    width: 100%;
+}
+
+.ad p {
+    margin-top: 10px;
+    text-indent: 0px;
+}
+
+#btn-close {
+    float: right;
+    margin: -15px -5px;
+    cursor: pointer;
 }
 
 input {
@@ -361,26 +363,27 @@ Editando o estilo das spans (contatos)
 */
 
 .invalidName, .invalidEmail, .invalidNasc {
-	color: red;
-	font-size: 9px;
-	margin: 0 350px 0 280px;
-}
-#btn_enviar {
-	margin-bottom: 25px;
-	margin-left: 30px;
+    color: red;
+    font-size: 9px;
+    margin: 0 350px 0 280px;
 }
 
-.word-counter{
-	margin-left: 250px;
-	font-size: 10px;
+#btn_enviar {
+    margin-bottom: 25px;
+    margin-left: 30px;
+}
+
+.word-counter {
+    margin-left: 250px;
+    font-size: 10px;
 }
 
 .invalidData {
-	color: red;
-	font-size: 10px;
-	margin: 0;
+    color: red;
+    font-size: 10px;
+    margin: 0;
 }
 
 .input_btn {
-	margin-left: 330px;
+    margin-left: 330px;
 }

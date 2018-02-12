@@ -1,4 +1,4 @@
-/* ESTE SCRIPT ESTÁ FUNCIONAL ATÉ O MOMENTO! 11/02/18 - 14:12 */
+/* ESTE SCRIPT ESTÁ FUNCIONAL ATÉ O MOMENTO! 11/02/18 - 20:25 */
 
 var regex = new RegExp("^[ a-z\-A-Zàèìòùáéíóúâêîôûãõ\b]+$");
 var regEmail = new RegExp("^[ a-z0-9\-A-Zàèìòùáéíóúâêîôûãõ\b]+$");
@@ -37,11 +37,11 @@ var btnInput = document.querySelector(".ad");
 if (btnInput != null) {
     document.querySelector(".input_btn").addEventListener("click", function(evt) {
         var emailAd = form_ad.email_ad.value.trim();
-        if (emailAd.length == 0 || emailAd.indexOf('@') == -1 || 
+        if (emailAd.length == 0 || emailAd.indexOf('@') == -1 ||
         emailAd.substr(emailAd.length - 4) !== ".com") {
             alert("Digite o e-mail corretamente!");
             evt.preventDefault();
-        } 
+        }
     })
 }
 

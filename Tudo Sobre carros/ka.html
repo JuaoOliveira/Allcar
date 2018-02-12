@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Allcar</title>
+        <link rel="stylesheet" type="text/css" href="_css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+    <script>
+        function mudaFoto(foto) {
+            document.getElementById("img-carro").src = foto;
+        }
+    </script>
+    <body>
+        <header id="cabecalho">
+            <nav class="menu">
+                <ul>
+                    <li onmouseover="mudaFoto('_multimidia/home.png')" onmouseout="mudaFoto('_multimidia/carro.png')"
+                        class="logo"><a href="index.html"><img src="_multimidia/logo.png" alt=""></a></li>
+                    <li onmouseover="mudaFoto('_multimidia/especificacoes-02.png')"
+                        onmouseout="mudaFoto('_multimidia/carro.png')"><a href="partes-do-carro.html">Componentes</a>
+                    </li>
+                    <li onmouseover="mudaFoto('_multimidia/fotos.png')" onmouseout="mudaFoto('_multimidia/carro.png')"><a
+                            href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('_multimidia/contato.png')" onmouseout="mudaFoto('_multimidia/carro.png')"><a
+                            href="contatos.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <img id="img-carro" src="_multimidia/carro.png">
+
+        <div class="barra-lateral">
+    <ul>
+        <li>
+            <h3>Lista de Marcas</h3></li>
+        <li id="chev"><a href="#">Chevrolet &nbsp;&nbsp; &gt;</a>
+            <ul>
+                <li>
+                    <a href="onix.html">Onix</a>
+            </ul>
+            </li>
+            <li><a href="#">Volkswagen</a></li>
+            <li id="ford"><a href="#">Ford &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;</a>
+                <ul>
+                    <li class="submenuLateral">
+                        <a href="ka.html">Ka</a>
+                </ul>
+                </li>
+                <li><a href="#">Toyota</a></li>
+                <li><a href="#">Honda</a></li>
+                <li><a href="#">Hyundai</a></li>
+                <li><a href="#">Ferrari</a></li>
+                <li><a href="#">Jeep</a></li>
+                <li><a href="#">Fiat</a></li>
+    </ul>
+</div>
+
+        <div id="subtitulo">
+            Saiba tudo sobre Carros
+            <br> Atualizado em 07/01/2018
+        </div>
+
+        <div class="espaco"></div>
+
+        <div class="interface">
+            <div class="content">
+                <h1>Ford Ka</h1><br><br>
+    </body>
+</html>

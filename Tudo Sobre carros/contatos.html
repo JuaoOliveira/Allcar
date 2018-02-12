@@ -1,5 +1,7 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,105 +11,104 @@
 </head>
 
 <body>
-<header id="cabecalho">
-    <nav class="menu">
-        <ul>
-            <li onmouseover="mudaFoto('_multimidia/home.png')" onmouseout="mudaFoto('_multimidia/contato.png')"
-                class="logo"><a href="index.html"><img src="_multimidia/logo.png" alt=""></a></li>
-            <li onmouseover="mudaFoto('_multimidia/especificacoes-02.png')"
-                onmouseout="mudaFoto('_multimidia/contato.png')"><a href="partes-do-carro.html">Componentes</a></li>
-            <li onmouseover="mudaFoto('_multimidia/fotos.png')" onmouseout="mudaFoto('_multimidia/contato.png')"><a
-                    href="fotos.html">Fotos</a></li>
-            <li onmouseover="mudaFoto('_multimidia/contato.png')" onmouseout="mudaFoto('_multimidia/contato.png')"><a
-                    href="contatos.html">Fale conosco</a></li>
-        </ul>
-    </nav>
-</header>
-
-<img id="img-home" src="_multimidia/contato.png">
-
-<div class="barra-lateral">
-    <ul>
-        <li><h3>Lista de Marcas</h3></li>
-        <li id="chev"><a href="#">Chevrolet &nbsp;&nbsp; &gt;</a>
+    <header id="cabecalho">
+        <nav class="menu">
             <ul>
-                <li>
-                    <a href="onix.html">Onix</a>
+                <li onmouseover="mudaFoto('_multimidia/home.png')" onmouseout="mudaFoto('_multimidia/contato.png')" class="logo"><a href="index.html"><img src="_multimidia/logo.png" alt=""></a></li>
+                <li onmouseover="mudaFoto('_multimidia/especificacoes-02.png')" onmouseout="mudaFoto('_multimidia/contato.png')"><a href="partes-do-carro.html">Componentes</a></li>
+                <li onmouseover="mudaFoto('_multimidia/fotos.png')" onmouseout="mudaFoto('_multimidia/contato.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('_multimidia/contato.png')" onmouseout="mudaFoto('_multimidia/contato.png')"><a href="contatos.html">Fale conosco</a></li>
             </ul>
-        </li>
-        <li><a href="#">Volkswagen</a></li>
-        <li><a href="#">Ford</a></li>
-        <li><a href="#">Toyota</a></li>
-        <li><a href="#">Honda</a></li>
-        <li><a href="#">Hyundai</a></li>
-        <li><a href="#">Ferrari</a></li>
-        <li><a href="#">Jeep</a></li>
-        <li><a href="#">Fiat</a></li>
-    </ul>
-</div>
+        </nav>
+    </header>
 
-<div id="subtitulo">
-    Saiba tudo sobre Carros<br>
-    Atualizado em 07/01/2018
-</div>
+    <img id="img-home" src="_multimidia/contato.png">
 
-<div class="espaco"></div>
-
-<div class="interface">
-    <div class="form_contato">
-        <h1>Fale conosco</h1><br>
-
-        <form name="form1" style="line-height:2" method="post" id="fContato">
-        <fieldset id="usuario"><legend>Identificação do Usuário</legend>
-
-        <label for="nome"><p>Nome:<input name="tNome" type="text" id="nome" placeholder="Nome Completo" size="40"></p></label><span class="invalidName"></span>
-
-        <label for="email"><p>E-mail:<input name="tEmail" type="email" id="email" placeholder="exemplo@exemplo.com" size="40"><br></p></label>
-        <span class="invalidEmail"></span>
-
-        <fieldset style="width:700px; margin: 0 auto;" id="sexo"><legend>Sexo</legend>
-            <p><input type="radio" name="tSexo" id="cMasc" checked> <label for="cMasc">Masculino</label></p>
-            <p><input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label></p>
-        </fieldset><br>
-
-        <label for="nasc"><p>Data de Nascimento:<input id="nasc" name="tNasc" type="text"></p></label><br>
-
-    </fieldset>
-
-    <fieldset id="mensagem"><legend>Mensagem</legend>
-        <label for="msg"><p>Mensagem</p></label>
-        <textarea style="margin-left:40px" name="cMsg" id="msg" cols="50" rows="10" placeholder="Digite seu texto"></textarea>
-        <span class="invalidMsg"></span><br>
-
-        <input type="submit" name="submit" value="Enviar" id="btn_enviar">
-        <span class="word-counter"></span>
-    </fieldset>
-
-    </form>
+    <div class="barra-lateral">
+        <ul>
+            <li>
+                <h3>Lista de Marcas</h3></li>
+            <li id="chev"><a href="#">Chevrolet &nbsp;&nbsp; &gt;</a>
+                <ul>
+                    <li>
+                        <a href="onix.html">Onix</a>
+                </ul>
+                </li>
+                <li><a href="#">Volkswagen</a></li>
+                <li id="ford"><a href="#">Ford &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;</a>
+                    <ul>
+                        <li class="submenuLateral">
+                            <a href="ka.html">Ka</a>
+                    </ul>
+                    </li>
+                    <li><a href="#">Toyota</a></li>
+                    <li><a href="#">Honda</a></li>
+                    <li><a href="#">Hyundai</a></li>
+                    <li><a href="#">Ferrari</a></li>
+                    <li><a href="#">Jeep</a></li>
+                    <li><a href="#">Fiat</a></li>
+        </ul>
     </div>
 
-    <div><br>
+    <div id="subtitulo">
+        Saiba tudo sobre Carros<br> Atualizado em 07/01/2018
+    </div>
 
-        <h1>Nossas informações</h1><br>
-        Telefone: 3333-3333 <br>
-        Redes Sociais: (Facebook, Twitter, Instagram)
-        <address>
+    <div class="espaco"></div>
+
+    <div class="interface">
+        <div class="form_contato">
+            <h1>Fale conosco</h1><br>
+
+            <form name="form1" style="line-height:2" method="post" id="fContato">
+                <fieldset id="usuario">
+                    <legend>Identificação do Usuário</legend>
+
+                    <label for="nome"><p>Nome:<input name="tNome" type="text" id="nome" placeholder="Nome Completo" size="40"></p></label><span class="invalidName"></span>
+
+                    <label for="email"><p>E-mail:<input name="tEmail" type="email" id="email" placeholder="exemplo@exemplo.com" size="40"><br></p></label>
+                    <span class="invalidEmail"></span>
+
+                    <fieldset style="width:700px; margin: 0 auto;" id="sexo">
+                        <legend>Sexo</legend>
+                        <p><input type="radio" name="tSexo" id="cMasc" checked> <label for="cMasc">Masculino</label></p>
+                        <p><input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label></p>
+                    </fieldset><br>
+
+                    <label for="nasc"><p>Data de Nascimento:<input id="nasc" name="tNasc" type="text"></p></label><br>
+
+                </fieldset>
+
+                <fieldset id="mensagem">
+                    <legend>Mensagem</legend>
+                    <label for="msg"><p>Mensagem</p></label>
+                    <textarea style="margin-left:40px" name="cMsg" id="msg" cols="50" rows="10" placeholder="Digite seu texto"></textarea>
+                    <span class="invalidMsg"></span><br>
+
+                    <input type="submit" name="submit" value="Enviar" id="btn_enviar">
+                    <span class="word-counter"></span>
+                </fieldset>
+
+            </form>
+        </div>
+
+        <div><br>
+
+            <h1>Nossas informações</h1><br> Telefone: 3333-3333 <br> Redes Sociais: (Facebook, Twitter, Instagram)
+            <address>
             Brasil, CE <br>
             72000-000 <br>
             Av. Alguma Coisa, 666, Fortaleza
         </address><br><br>
+        </div>
+
     </div>
 
-</div>
-
-<footer class="rodape">
+    <footer class="rodape">
 
         <div class="container">
             <div class="div-rodape">
-                    <h3>Contato</h3>
-                    Endereço: Av. Alguma Coisa, 666, Fortaleza-Ce <br>CEP: 72000-000 <br>
-                    Telefone: <a href="tel:6133333333">(61) 3333-3333</a><br>
-                    Email: <a href="mailto:allcar@site.com.br">allcar@site.com.br</a>
+                <h3>Contato</h3> Endereço: Av. Alguma Coisa, 666, Fortaleza-Ce <br>CEP: 72000-000 <br> Telefone: <a href="tel:6133333333">(61) 3333-3333</a><br> Email: <a href="mailto:allcar@site.com.br">allcar@site.com.br</a>
             </div>
 
             <div class="div-rodape">
@@ -124,20 +125,19 @@
                 <a href="onde-estamos.html">Onde estamos</a>
             </div>
 
-            </div>
+        </div>
 
-            <div class="copy" ><br>
-                Todos os direitos reservados &copy; 2018. <a href="Termo-de-uso.html">Termos de uso</a> e <a href="politica-de-privacidade.html">Política de privacidade.</a><br>
-                <a href="#">Facebook</a> |
-                <a href="#">Twitter</a>
-            </div>
+        <div class="copy"><br> Todos os direitos reservados &copy; 2018. <a href="Termo-de-uso.html">Termos de uso</a> e <a href="politica-de-privacidade.html">Política de privacidade.</a><br>
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a>
+        </div>
 
     </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="javascript/functions.js" language="javascript"></script>
-<script type="text/javascript" src="javascript/jquery.mask.min.js">
-
-</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascript/functions.js" language="javascript"></script>
+    <script type="text/javascript" src="javascript/jquery.mask.min.js">
+    </script>
 </body>
+
 </html>
